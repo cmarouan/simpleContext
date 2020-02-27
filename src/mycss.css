@@ -1,0 +1,14 @@
+#app {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;  
+}
+body{
+  background-color: #d3ecff !important;
+}
+@media screen and (max-width: 1126px) {
+  #app {
+    flex-direction: column;
+    align-items: center;
+  }
+}

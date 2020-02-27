@@ -1,0 +1,63 @@
+h1 {
+    color: #2196f3;
+}
+#card_container {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 845px;
+    overflow-y: scroll;
+    border-radius: 6px;
+}
+#card_container::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #c7e5ff;
+}
+
+#card_container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#card_container::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(72, 144, 251, 0.3);
+    background-color: #55bbfa;
+}
+#action_zone {
+    width: 100%;
+    bottom: -16px;
+    position: sticky;
+    background-color: white;
+    padding: 1rem;
+}
+#action {
+    width: 100%;
+}
+#pay_btn {
+    width: 90%;
+    border: 0;
+    background-color: #2196f3;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#price {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 1.2rem;
+    color: #2196f3;
+}
+#loading {
+    color: #2196f3;
+}
