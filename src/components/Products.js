@@ -25,6 +25,9 @@ export default function Products() {
                 <div>
                     <input type="text" placeholder="Search ..." id="search" onChange={onChange}/>
                 </div>
+                <div>
+                    <input type="button" placeholder="Sort by price ..." id="btn" onClick={context.sortByPrice} value="Sort by price"/>
+                </div>
             </div>
             <div>
                 {products && products.map((p, index) => 

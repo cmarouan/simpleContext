@@ -15,5 +15,7 @@ export const productReducer = (state, action) => {
       return {...state, load: true}
     if (action.type === "REMOVE_LOAD")
       return {...state, load: false}
+    if (action.type === "SORT_DATA")
+      return {...state, products: {...state.products, data: {status : state.products.data.status, data : action.payload}}}
     return state;
 }

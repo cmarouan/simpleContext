@@ -8,7 +8,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 845px;
+    max-height: 845px;
     overflow-y: scroll;
     border-radius: 6px;
 }

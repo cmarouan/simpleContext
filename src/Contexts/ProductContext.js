@@ -45,6 +45,14 @@ export const ProductProvider = ({ children }) => {
         }, 1000);
     }
 
+    const sortByPrice = () => {
+        let all = state.products.data.data;
+        all.sort((a, b) => {
+            return a.price - b.price;
+        });
+        dispatch({type: "SORT_DATA", payload: all});
+    }
+
     const products = getProducts();
 
     const value = { 
@@ -54,6 +62,7 @@ export const ProductProvider = ({ children }) => {
         FetchProducts,
         getProducts,
         products,
+        sortByPrice,
         buy
     };
     

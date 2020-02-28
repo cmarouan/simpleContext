@@ -2,7 +2,12 @@ import React from 'react'
 import './card.css';
 import  Product from "./Product";
 import { useContext } from 'react';
+import ShopIcon from './svg/Shop';
 import { ProductContext } from '../Contexts/ProductContext';
+
+const styleCard = {
+    marginRight: "4%"
+}
 
 export default function MyCard() {
 
@@ -12,7 +17,7 @@ export default function MyCard() {
     return (
         <div id="card_container">
             <div>
-                <h1>My Card ({products.length})</h1>
+                <h1><ShopIcon style={{styleCard}} />My Card ({products.length})</h1>
             </div>
             <div>
                 {products && products.map((p, index) => 
